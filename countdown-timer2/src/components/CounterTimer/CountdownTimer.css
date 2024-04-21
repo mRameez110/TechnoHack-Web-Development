@@ -1,0 +1,87 @@
+.countdown-timer {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  animation: gradientAnimation 15s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.timer {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.timer-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.timer-value {
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+}
+
+.timer-label {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  padding: 15px;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.start {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.stop {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.reset {
+  background-color: #ffc107;
+  color: #333;
+}
